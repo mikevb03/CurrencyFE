@@ -1,0 +1,31 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 0.5fr 1.5fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "form form form form form res res res"
+                        ". prev prev prev . forecast forecast ."
+                        ". prev prev prev . forecast forecast ."
+                        ". . . . . . . .";
+}
+
+.prev {
+  grid-area: prev;
+  position: relative;
+  height: 40vh;
+  width: 40vw
+}
+
+.forecast {
+  grid-area: forecast;
+  position: relative;
+  height: 40vh;
+  width: 40vw
+}
+
+.form {
+  grid-area: form;
+}
+
+.res {
+  grid-area: res;
+}
